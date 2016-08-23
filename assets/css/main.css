@@ -1,0 +1,353 @@
+h1, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: serif;
+}
+
+#hero-section {
+  background-image: url("../../img/header-bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+}
+
+.navbar-header a {
+  font-family: 'Kaushan Script', cursive;
+}
+
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  background-color: rgba(51, 51, 51, 0.5);
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.navbar-custom .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 18px;
+  color: #FED136;
+}
+
+.navbar-custom .navbar-toggle:focus, .navbar-custom .navbar-toggle:active {
+  outline: none;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+  color: #FED136;
+  font-size: 1.2em;
+}
+
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+
+.navbar-custom a {
+  color: #fff;
+}
+
+.navbar-custom .nav li a {
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+  color: #FED136;
+  outline: none;
+  background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
+  outline: none;
+  background-color: #FED136;
+}
+
+.navbar-custom .nav li.active {
+  outline: none;
+}
+
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+  color: #FED136;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: #333333;
+    border-bottom: 1px solid #fed136;
+  }
+  .navbar-custom .navbar-custom {
+    width: 100%;
+  }
+}
+
+.header-descripcion .jumbotron {
+  background-color: transparent;
+  margin-top: 200px;
+}
+
+.header-descripcion h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.header-descripcion button {
+  background-color: #FED136;
+  border: #FED136;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 750px) {
+  #hero-section {
+    height: 600px;
+  }
+  .header-descripcion .jumbotron {
+    margin-top: 50px;
+  }
+  .header-descripcion h1 {
+    font-size: 35px;
+    padding: 0;
+  }
+}
+
+.services {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.services h5 {
+  margin-top: 25px;
+}
+
+.services p {
+  margin-top: 15px;
+  color: #7E7877;
+}
+
+.services i.fa {
+  border-radius: 100%;
+  padding: 20px;
+  background-color: #FED136;
+  font-size: 50px;
+  color: #fff;
+  margin-top: 40px;
+  width: 95px;
+}
+
+.fondo-portfolio {
+  background-color: #F7F7F7;
+  padding-bottom: 5%;
+}
+
+.fondo-portfolio .row-uno {
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.fondo-portfolio .thumbnail {
+  padding: 0;
+  padding-bottom: 5%;
+}
+
+.fondo-portfolio .thumbnail img {
+  width: 100%;
+}
+
+.caption h5 {
+  margin-bottom: 0px;
+}
+
+.caption small {
+  color: gray;
+  font-family: serif;
+}
+
+h5 {
+  font-weight: 700 !important;
+}
+
+#about p {
+  color: #BEBEBE;
+}
+
+.linea-about {
+  position: absolute;
+  left: 50%;
+  z-index: -10;
+  width: 3px;
+  height: 150%;
+  background: #F7F7F7;
+  margin: 0px auto;
+}
+
+.container .row {
+  margin: 5%;
+}
+
+.circulo-about {
+  border-radius: 50%;
+  border: 5px solid #F7F7F7;
+}
+
+.img-about {
+  width: 15%;
+  margin-top: 2%;
+}
+
+.descr-historia {
+  width: 42.5%;
+  padding: 2% 4%;
+}
+
+.texto-historia {
+  width: 200px;
+  height: 200px;
+}
+
+#our-story {
+  background: #FED136;
+  padding: 20% auto;
+}
+
+@media screen and (max-width: 750px) {
+  .img-about {
+    width: 30%;
+    margin-top: 4%;
+  }
+  .descr-historia {
+    width: 70%;
+    text-align: justify !important;
+  }
+  .linea-about {
+    display: none;
+  }
+}
+
+.fondo-team {
+  background-color: #F7F7F7;
+  padding-top: 55px;
+  padding-bottom: 100px;
+}
+
+.team img {
+  border-radius: 100%;
+  padding: 5px;
+  background-color: #fff;
+  width: 150px;
+}
+
+.icons-team i {
+  padding: 5px;
+  position: relative;
+  font-size: 15px;
+  background-color: #333333;
+  color: #fff;
+  border-radius: 100%;
+  margin: 0 10px;
+  width: 25px;
+  margin-bottom: 5px;
+}
+
+.text-team p {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 750px) {
+  .text-team p {
+    padding: 0 40px;
+  }
+}
+
+.logos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.logos img {
+  margin-right: 15px;
+}
+
+.contact {
+  background-color: #333333;
+  padding: 10px 0 100px;
+}
+
+.contact .titulo {
+  text-align: center;
+  color: #fff;
+}
+
+.contact .columnas {
+  margin: 50px 0 30px 0;
+}
+
+.contact input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.contact textarea {
+  width: 100%;
+  height: 162px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact .buton {
+  text-align: center;
+}
+
+.contact button {
+  background-color: #FED136;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.pie-pagina {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.pie-pagina .redes {
+  padding: 5px 0;
+}
+
+.pie-pagina .redes i {
+  margin-top: 10px;
+}
+
+.pie-pagina .redes a {
+  color: #fff;
+}
+
+.pie-pagina .redes .red {
+  height: 35px;
+  width: 35px;
+  background-color: #333333;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.pie-pagina .color {
+  color: #FED136;
+}

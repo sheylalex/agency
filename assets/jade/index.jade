@@ -1,0 +1,248 @@
+doctype html
+html(lang="en")
+	head
+		title jade
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="assets/css/main.css")
+		link(rel="stylesheet", href="assets/css/bootstrap.min.css")
+		link(rel="stylesheet", href="assets/font-awesome/css/font-awesome.min.css")
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css")
+		link(href='https://fonts.googleapis.com/css?family=Kaushan+Script', rel='stylesheet', type='text/css')
+
+		script(src="assets/js/jquery.js")
+		script(src="assets/js/bootstrap.min.js")
+		
+
+	body
+		section#Home
+			#hero-section
+				nav.navbar.navbar-custom.navbar-fixed-top
+					.container
+						.navbar-header
+							button.navbar-toggle.collapsed(type="button",class="navbar-toggle",data-toggle="collapse",data-target="#nabar-1")
+								i.fa.fa-bars
+							a.navbar-brand(href="#page-top") Start Bootstrap 
+						.collapse.navbar-collapse#nabar-1
+							ul.nav.navbar-nav.navbar-right
+								li.hidden
+									a.page-scroll(href="#page-top")
+								li
+									a.page-scroll(href="#Servicios") Services
+								li
+									a.page-scroll(href="#Portafolio") Portfolio
+								li
+									a.page-scroll(href="#About") About
+								li
+									a.page-scroll(href="#Team") Team
+								li
+									a.page-scroll(href="#Contact") Contact
+				.container				
+						.row.text-center.header-descripcion
+							.jumbotron
+								h2 Welcome To Our Studio!
+								h1 IT'S NICE TO MEET YOU
+								button 
+									strong TELL ME MORE
+		section#Servicios
+			#services
+			.container.services
+				h2.text-center <strong>SERVICES</strong>
+				p.text-center <em>Lorem ipsum dolor sit amet consectetur.</em>
+				<center>
+				.row
+					.col-md-4
+						i.fa.fa-shopping-cart.
+						h5.text-center<strong>E-Commerce</strong>
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					.col-md-4
+						i.fa.fa-laptop
+						h5.text-center<strong>Responsive Design</strong>
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod					   tempor incididunt ut labore et dolore magna aliqua.
+					.col-md-4
+						i.fa.fa-lock
+						h5.text-center<strong>Web Security</strong>
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</center>
+		section#Portafolio
+			#portafolio
+			.fondo-portfolio
+			#portafolio.container.text-center.portafolio
+				.row.row-uno
+					h2
+						b PORTFOLIO
+					p  
+						em Lorem ipsum dolor sit amet consectetur,
+				.row
+					.col-sm-6.col-md-4
+						.thumbnail
+							img(src="img/portfolio/roundicons.png") 
+							.caption
+								h5
+									b Round Icons 
+								small
+									em Graphic Desing
+					.col-sm-6.col-md-4
+						.thumbnail
+							img(src="img/portfolio/startup-framework.png") 
+							.caption
+								h5 
+									b Startup Framework 
+								small
+									em Website Desing
+					.col-sm-6.col-md-4
+						.thumbnail
+							img(src="img/portfolio/treehouse.png") 
+							.caption
+								h5 
+									b Treehouse 
+								small
+									em Website Desing
+				.row
+					.col-sm-6.col-md-4
+						.thumbnail
+							img(src="img/portfolio/golden.png") 
+							.caption
+								h5 
+									b Golden 
+								small
+									em Website Desing
+					.col-sm-6.col-md-4
+						.thumbnail
+							img(src="img/portfolio/escape.png") 
+							.caption
+								h5 
+									b Escape 
+								small
+									em Website Desing
+					.col-sm-6.col-md-4
+						.thumbnail
+							img(src="img/portfolio/dreams.png") 
+							.caption
+								h5 
+									b Dreams
+								small
+									em Website Desin
+		section#About
+			#about
+			h1.text-center ABOUT
+			P.text-center
+				em Lorem ipsum dolor sit amet
+			br
+			.container
+				// PArte2
+				hr.linea-about
+				.row
+					.descr-historia.pull-left.text-right
+						h5 2009 - 2011
+						h5 Our Humble Beginning
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempori ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniameiusmo temporincididunt ut labore et dolore magna aliqua.
+
+					img.circulo-about.img-about.pull-left(src="img/about/1.jpg")
+				//- hr.linea-about
+				.row
+					.descr-historia.pull-right
+						h5 MARCH 2011
+						h5 An agency is Born
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempori ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniameiusmo temporincididunt ut labore et dolore magna aliqua.
+
+					img.circulo-about.img-about.pull-right(src="img/about/2.jpg")
+				//- hr.linea-about
+				.row
+					.descr-historia.pull-left.text-right
+						h5 DECEMBER 2012
+						h5 Transition to Full Service
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempori ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniameiusmo temporincididunt ut labore et dolore magna aliqua.
+
+					img.circulo-about.img-about.pull-left(src="img/about/3.jpg")
+				//- hr.linea-about
+				.row
+					.descr-historia.pull-right
+						h5 JULY 2014
+						h5 Phase two expansion 
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempori ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,eiusmo temporincididunt ut labore et dolore magna aliqua.
+					img.circulo-about.img-about.pull-right(src="img/about/4.jpg")
+				//- hr.linea-about
+				.row.text-center
+					img#our-story.circulo-about.img-about(src="img/about/5.png")
+						
+
+					//parte2	
+		section#Team
+			#amazing-team
+			.fondo-team
+				.container
+				h2.text-center OUR AMAZING TEAM
+				p.text-center <em>Lorem ipsum dolor sit amet</em>
+				<center>
+				.row.team
+					.col-md-4.icons-team
+						img(src="img/team/1.jpg")
+						h5<strong>Kay Garland</strong>
+						h6 Lead Designer
+						i.fa.fa-twitter
+						i.fa.fa-facebook
+						i.fa.fa-linkedin
+					.col-md-4.icons-team
+						img(src="img/team/2.jpg")
+						h5<strong>Larry Parker</strong>
+						h6 Lead Marketer
+						i.fa.fa-twitter
+						i.fa.fa-facebook
+						i.fa.fa-linkedin
+					.col-md-4.icons-team
+						img(src="img/team/3.jpg")
+						h5<strong>Diana Pertersen</strong>
+						h6 Lead Developer
+						i.fa.fa-twitter
+						i.fa.fa-facebook
+						i.fa.fa-linkedin
+				.row.text-team
+					p.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore<br>magna sed do eiusmod tempor incididunt ut labore et dolore magna
+				</center>
+			.row.logos
+				<center>
+				img(src="img/logos/envato.jpg")
+				img(src="img/logos/designmodo.jpg")
+				img(src="img/logos/themeforest.jpg")
+				img(src="img/logos/creative-market.jpg")
+				</center>
+		section#Contact
+			#contact-us
+			.contact
+				.container
+					.row
+					.titulo
+						h1 CONTACT US
+						P
+							em Lorem ipsum dolor sit amet consectetur.
+					.columnas
+						.col-md-6
+							input(type="text", placeholder="YOUR NAME", required)
+							input(type="text", placeholder="YOUR EMAIL", required)
+							input(type="text", placeholder="YOUR PHONE", required)
+						.col-md-6
+							textarea(placeholder="YOUR MESSAGE" row="30")
+				.buton 
+					button.btn.btn-default SEND MESSAGE
+		#pie-pagina
+		.pie-pagina
+			.container
+				.row
+					.col-md-4
+						p 
+						strong Copyright © Your Website 2014
+					.col-md-4.redes
+						.red 
+							a(href="#")
+								i.fa.fa-twitter
+						.red
+							a(href="#")
+								i.fa.fa-facebook
+						.red
+							a(href="#")
+								i.fa.fa-linkedin
+					.col-md-4.color
+						p 
+						strong Privacy Policy Terms of Use
+						p ajhskjahgdsagdh

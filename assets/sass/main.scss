@@ -1,0 +1,269 @@
+$color_negro:#333333;
+$color_plomo:#BEBEBE;
+$color_amarillo:#FED136;
+$color_blanco:#fff;
+$color-texto:#7E7877;
+$color_plomoclaro:#F7F7F7;
+$fuente:"Roboto", sans-serif;
+
+
+h1, h5, h6, {
+	font-family: $fuente;
+}
+p{
+	font-family: serif;
+}
+// HERO SECTION
+// *{outline: 1px solid red;}
+
+#hero-section{
+	background-image: url("../../img/header-bg.jpg");
+	background-size: cover;
+	height: 100vh;
+	color: $color_blanco;
+}
+.navbar-header a{
+	font-family: 'Kaushan Script', cursive;
+}
+.navbar-custom {
+	margin-bottom: 0;
+	border-bottom: 1px solid rgba(white, 0.3);
+	text-transform: uppercase;
+	background-color: rgba($color_negro, .5);
+	font-family:"Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+	.navbar-toggle {
+		padding: 4px 6px;
+		font-size: 18px;
+		color: $color_amarillo;
+		&:focus,
+		&:active {
+			outline: none;
+		}
+	}
+    .navbar-brand {
+		font-weight: 700;
+		color: $color_amarillo;
+		font-size: 1.2em;
+		&:focus {
+		    outline: none;
+		}
+	}
+	a {
+		color:$color_blanco;
+	}
+	.nav {
+		li {
+			a {
+				-webkit-transition: background .3s ease-in-out;
+				-moz-transition: background .3s ease-in-out;
+				transition: background .3s ease-in-out;
+				&:hover {
+					color:$color_amarillo;
+					outline: none;
+					background-color: transparent;
+				}
+				&:focus,
+				&:active {
+					outline: none;
+					background-color: $color_amarillo;
+				}
+			}
+			&.active {
+				outline: none;
+				a {
+					background-color: rgba(white, 0.3);
+					&:hover {
+						color: $color_amarillo
+					}
+				}
+			}
+		}
+	}
+	@media(min-width:768px) {
+		padding: 20px 0;
+		border-bottom: none;
+		letter-spacing: 1px;
+		-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+		-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+		transition: background .5s ease-in-out,padding .5s ease-in-out;
+		&.top-nav-collapse {
+			padding: 0;
+			background: $color_negro;
+			border-bottom: 1px solid rgba($color_amarillo,1);
+		}
+		.navbar-custom{
+			width: 100%;
+		}
+	}
+}
+
+// fin menu
+.header-descripcion{
+	.jumbotron{
+	background-color: transparent;
+	margin-top: 200px;
+}
+} 
+.header-descripcion h1{
+	font-size: 60px;
+	margin-bottom: 30px;
+}
+.header-descripcion button{
+	background-color: $color_amarillo;
+	border:$color_amarillo;
+	padding: 10px 20px;
+}
+@media screen and (max-width: 750px){
+	#hero-section{
+		height: 600px;}
+	.header-descripcion{
+	.jumbotron{
+	margin-top:50px;
+	}
+	} 
+	.header-descripcion h1{
+		font-size: 35px;
+		padding: 0;
+	}
+}
+// FIN DE HEADER
+// services
+.services{
+	margin-top: 70px;
+	margin-bottom: 100px;
+}
+.services h5{
+	margin-top: 25px;
+}
+.services p{
+	margin-top: 15px;
+	color: $color_texto;
+}
+.services i.fa{
+	border-radius: 100%;
+	padding: 20px;
+	background-color: $color_amarillo;
+	font-size: 50px;
+	color: $color_blanco;
+	margin-top: 40px;
+	width: 95px;
+}
+// FIN DE SERVICES
+// portfolio
+.fondo-portfolio{
+ 	background-color:$color_plomoclaro;
+ 	padding-bottom: 5%;
+ 	.row-uno{
+ 		padding-top:5%;
+ 		padding-bottom:3%;
+ 		}
+ }
+.fondo-portfolio {
+ 	.thumbnail{
+ 		padding: 0;
+ 		padding-bottom:5%;
+ 		img{width:100%}
+ 		}
+ }
+.caption h5{margin-bottom:0px;}
+.caption small{color:gray;font-family:serif;}
+// fin portafolio
+// ABOUT
+ 
+	// *{outline:1px solid red;}
+
+	h5{ font-weight:700 !important; }
+	#about p{color:$color_plomo;}
+	.linea-about{position:absolute;left:50%;z-index:-10 ;width:3px;height:150%;background:$color_plomoclaro;margin:0px auto;}
+	.container .row{margin:5%;}
+	.circulo-about{border-radius:50%; border:5px solid $color_plomoclaro;}
+	.img-about{width:15%;margin-top:2%;}
+	.descr-historia{width:42.5%;padding:2% 4%;}
+	.texto-historia{width:200px;height:200px;}
+	#our-story{background:$color_amarillo;padding:20% auto;}
+
+	@media screen and(max-width:750px){
+		.img-about{width:30%;margin-top:4%;}
+		.descr-historia{width:70%; text-align:justify!important;}
+		.linea-about{display:none;}
+	}
+
+// TERMINA ABOUT
+  // inicio our amazing team
+.fondo-team{
+ 	background-color: $color_plomoclaro;
+ 	padding-top: 55px;
+ 	padding-bottom: 100px;
+ }
+.team img{
+ 	border-radius: 100%;
+ 	padding: 5px;
+ 	background-color: $color_blanco;
+ 	width: 150px;
+ }
+.icons-team i{
+ 	padding: 5px;
+ 	position: relative;
+ 	font-size: 15px;
+ 	background-color: $color_negro;
+ 	color: $color_blanco;
+ 	border-radius: 100%;
+ 	margin:0 10px;
+ 	width: 25px; 
+ 	margin-bottom: 5px;
+}
+.text-team p{
+ 	margin-top: 50px;
+ @media screen and(max-width:750px) {
+ 	padding: 0 40px;
+ 	
+ }
+ }
+.logos{
+ 	margin-top: 30px;
+ 	margin-bottom: 30px;
+ }
+.logos img{
+ 	margin-right: 15px;
+ }
+ // fin our amazing team
+ // CONTACTO
+.contact{
+	background-color:$color_negro;
+    padding: 10px 0 100px;}
+.contact .titulo{text-align:center;
+    color:$color_blanco;}
+.contact .columnas{margin:50px 0 30px 0;}
+.contact input{
+	width: 100%;
+	padding:10px;
+	border-radius:5px;
+	margin-bottom:15px;}
+.contact textarea{
+    width: 100%;
+    height: 162px;
+	padding:10px;
+	border-radius:5px;}
+.contact .buton{text-align:center;}
+.contact button{
+	background-color:$color_amarillo;
+	color:$color_blanco;
+	border-radius:5px;
+	padding:10px;}
+// FIN DE CONTACTO
+// PIE DE PAGINA
+.pie-pagina{
+	text-align:center;
+	padding:20px 0;}
+.pie-pagina .redes{padding:5px 0}
+.pie-pagina .redes i{margin-top:10px;}
+.pie-pagina .redes a{color:$color_blanco;}
+.pie-pagina .redes .red{
+	height:35px;width:35px;
+	background-color:$color_negro;
+    display: inline-block;
+    border-radius:50%;
+    margin-right: 15px;}
+.pie-pagina .color{
+	color:$color_amarillo;}
+
